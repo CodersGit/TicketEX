@@ -27,11 +27,9 @@ class TicketMod {
 			) DEFAULT CHARSET=utf8 ENGINE=MyISAM;");
 		$db->execute("CREATE TABLE IF NOT EXISTS `tickets_user_comments` (
 				`id` BIGINT(20) NOT NULL AUTO_INCREMENT,
-				`user` BIGINT(20) NOT NULL,
 				`message` TEXT NULL ,
 				`time` DATETIME NOT  NULL,
-				PRIMARY KEY (`id`),
-				UNIQUE KEY (`user`)
+				PRIMARY KEY (`id`)
 			) DEFAULT CHARSET=utf8 ENGINE=MyISAM;");
 		$info = array(
 			'name' => '<i class="fa fa-info-circle"></i> ' . lng('TICKETS'),
