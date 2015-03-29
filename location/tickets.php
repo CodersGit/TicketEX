@@ -12,6 +12,8 @@ $p = (isset($_REQUEST['page']))? (int) $_REQUEST['page']:1;
 switch ($action) {
 	case 'install':
 		print($ticket_mod->install());
+		$content_main = View::ShowStaticPage('install.php', $path);
+		$page = lng('INSTALLATION_COMPLETE');
 		break;
 	case 'list':
 		if(isset($_POST['ticket'])) {
