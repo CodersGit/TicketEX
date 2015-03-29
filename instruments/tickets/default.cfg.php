@@ -4,5 +4,5 @@ $tickets = array(
 	'minimal_admin_lvl' => 12,
 	'tickets_by_page' => 10,
 	'tickets_by_page_adm' => 10,
-	'install' => false,
+	'install' => true,
 );

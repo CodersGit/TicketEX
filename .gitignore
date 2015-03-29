@@ -447,3 +447,5 @@ vote/mctop_get_bonus.php
 vote/topcraft_get_bonus.php
 vote/w2v_get_bonus.php
 woc/auth.php
+MineCraft/
+tickets.cfg.php
