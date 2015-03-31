@@ -66,6 +66,7 @@ switch ($action) {
 				loadTool("tickets.class.php", $path);
 				Ticket::SetUserComment($account, TextBase::HTMLDestruct($_POST['user_comment']));
 			}
+			loadTool("profile.class.php");
 			$query = $db->execute("SELECT * FROM `tickets_user_comments` WHERE `id`=" . $account->id());
 			$comment = ($temp = $db->fetch_array($query))? $temp['message']:'';
 			if(isset($_POST['id'])) {
