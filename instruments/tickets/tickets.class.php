@@ -6,9 +6,9 @@ class Ticket {
 		if (!$account->id()) return 2;
 		if(!$adm)
 			$type = 0;
-		elseif ($user->lvl() >= $tickets['minimal_moderate_lvl'])
-			$type = 4;
 		elseif ($user->lvl() >= $tickets['minimal_admin_lvl'])
+			$type = 4;
+		elseif ($user->lvl() >= $tickets['minimal_moderate_lvl'])
 			$type = 3;
 		else
 			return 1;

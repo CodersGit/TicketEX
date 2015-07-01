@@ -2,7 +2,7 @@
 class TicketMod {
 	public $modName = "TicketEX";
 	public $author = "Sergey Zhirov";
-	public $version = "1.0 pre2";
+	public $version = "1.0 pre3";
 	public $year = "2015";
 	public function TicketMod(){
 		global $MCR_LANG, $MCR_LANG_TPL, $tickets;
